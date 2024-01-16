@@ -3,14 +3,19 @@ header {
     color: #E8FDFF;
 }
 body {
-    background-color: whitesmoke;
+    background-color: #8da7b8;
     font-family: 'Roboto condensed', sans-serif; 
 }
 main {
     background-color: white;
     padding: 16px;
 }
-.my-class-name {}
+.my-class-name {
+    color: red;
+}
+my-class:hover {
+    color: red;
+}
 #my-unique-id {}
 .finstagram-post {
     margin-bottom: 48px;
@@ -18,13 +23,7 @@ main {
 .finstagram-post .user-info img {
     border-radius: 50%;
 }
-font-family: 'open-sans'. sans-serif;
-body {
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
-}
-a.photo:hover{
+css a.photo:hover{
     padding: 10px; transition: padding 0.5s;
   }
   a.photo{

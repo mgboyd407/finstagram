@@ -4,6 +4,7 @@ header {
 }
 body {
     background-color: whitesmoke;
+    font-family: 'Roboto condensed', sans-serif; 
 }
 main {
     background-color: white;
@@ -17,3 +18,18 @@ main {
 .finstagram-post .user-info img {
     border-radius: 50%;
 }
+font-family: 'open-sans'. sans-serif;
+body {
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+}
+a.photo:hover{
+    padding: 10px; transition: padding 0.5s;
+  }
+  a.photo{
+    transition: padding 0.5s;
+  }
+  a.photo:hover {
+    padding: 10px;
+  }

@@ -3,6 +3,24 @@ get '/' do
   erb(:index)
 end
 
+get '/login' do
+  erb(:login)
+end
+
+post '/login' do
+  username = params[:username]
+  password = params[:password]
+
+  @user = User.find_by(username: username)
+
+  if @user && @user.password == password
+    session[:user_id] = @user.id
+    "Success! User with id #{session[:user_id]} is logged in!"
+  else
+    "Login failed."
+  end
+end
+
 get '/signup' do     # if a user navigates to the path "/signup",
   @user = User.new   # setup empty @user object
   erb(:signup)       # render "app/views/signup.erb"
@@ -21,4 +39,5 @@ post '/signup' do
   else
     erb(:signup)
   end
+
 end
